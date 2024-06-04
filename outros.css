@@ -1,0 +1,99 @@
+*{
+    color: black;
+}
+
+/*Todas as páginas com h1*/
+h1 {
+    text-align: center;/*Alinha o texto no centro*/
+    font-size: 70px;/*Tamanho da fonte do texto*/
+    margin-top: 30px;/*Espaçamento externo*/
+}
+
+/*Estilizando Página Localização*/
+.video {
+    width: 100%;/*Largura*/
+    display: flex;/*Abri o flex para utilizar as propriedades dele*/
+    flex-direction: column;/*Deixando os elementos filhos em coluna*/
+    align-items: center;/*Deixando os elementos centralizados (verticalmente)*/
+    justify-content: center;/*Deixando os elementos centralizados (horizontalmente)*/
+}
+
+.video iframe {
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+/*Galeria de Fotos*/
+.galeria-container {
+    display: flex;/*alinhando lado a lado*/
+    flex-wrap: wrap;/*Se os itens não couberem mais em uma linha, eles irão quebrar para a próxima linha, 
+    mantendo o layout flexivel*/
+    justify-content: space-evenly;/*Para distribuir o espaço restante entre os itens flexíveis de maneira
+    uniforme, incluindo espaços iquais tanto entre os itens quanto nas extremidadesdo contêiner.*/
+    gap: 2vw;/*Da espaçamento entre as linhas e colunas das imagens*/
+    margin-top: 30px;
+}
+
+.galeria-items {
+    width: 300px;/*Largura*/
+    height: 250px;/*Altura*/
+    border: 10px solid #ffffff;
+    flex-grow: 1;/*O que isso faz é que todos os itens se expanda iguamente para preencher o espaço deisponivel 
+    no container flexivel. Se houver espaço extra, todos os itens irão crescer proporcionalmente, garantindo que 
+    o espaço seja preenchido de maneira uniforme.*/
+    transition: 1s;
+}
+
+.galeria-items img {
+    width: 100%;/*Largura*/
+    height: 100%;/*Altura*/
+    object-fit: cover;/*Deve ser dimensionado e posicionado dentro do contêiner, mantendo sua proporção original
+    e cobrindo todo o espaço disponível, sem distorções.*/
+}
+
+.galeria-items:hover {
+    transform: scale(1.2);/*Ao passar o mause a imagem se torna maior*/
+    border-color:rgb(255, 0, 0);
+    border-radius: 10px;
+}
+
+/*contatos*/
+.contato {
+    margin-bottom: 15px;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.formulario div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.formulario input, .formulario textarea {
+    color: rgb(132, 0, 255);
+    width: 300px;
+    border: 2px solid rgb(255, 0, 128);
+    border-radius: 5px;
+}
+
+.formulario button {
+    color: #ffffff;
+    background-color: rgb(255, 0, 128);
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/*Responsividade*/
+@media(max-width: 768px) {
+    .localizacao iframe {
+        width: 95%;/*Largura*/
+    }
+}

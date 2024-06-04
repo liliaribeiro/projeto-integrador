@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./outros.css">
+    <title>projeto Ods</title>
+  </head>
+  <body>
+    <!--1° Cabeçalho------------------>
+    <header>
+      <!--adicionando uma imagem-->
+      <!--nome da tag img é id="logo"-->
+      <img id="logo" src="./img/od3.jpg" alt="Logo"/>
+      <!--Criando nossa barra de navegação com as tags nav e lista com ule li-->
+      <nav>
+        <!--Criando nossa lista com os links das páginas-->
+        <ul>
+          <!--Link 1-->
+          <a href="./index.html">
+            <li>Início</li>
+          </a>
+          <!--Link 2-->
+          <a href="./od3.html">
+            <li>Ods 3</li>
+          </a>
+          <!--Link 3-->
+          <a href="./sobreods.html">
+            <li>Sobre ODS</li>
+          </a>
+          <!--Link 4-->
+          <a href="./fotos.html">
+            <li>Fotos</li>
+          </a>
+          <!--Link 5-->
+          <a href="./vídeo.html">
+            <li>Vídeo</li>
+          </a>
+        </ul>
+
+      </nav>
+
+    </header>
+    <!--Cabeçalho Finalizado-->
+
+    <!--Iniciando Banner-->
+<div id="banner"></div>
+
+<!--Esta Parte esta estilizada pelo outros.css-->
+<div class="ods3">
+  <h1>ODS3</h1>
+</div>
+
+<p>
+  Garantir uma vida saudável e possibilitar o bem-estar de todos os habitantes do mundo é importante para que existam
+sociedades prósperas. O acesso à saúde e bem-estar é um direito humano, porém, as desigualdades no acesso à
+assistência sanitária persistem e a cada ano morrem milhões de pessoas porque não recebem os cuidados necessários.
+Alinhadas a este Objetivo, podem ser realizadas ações como mutirões de saúde para a comunidade com especialistas,
+ caminhadas e corridas em grupo, gincanas com as crianças e seus avós, palestras e oficinas sobre prevenção e conscientização
+  de diversas doenças, campanhas de doação de sangue e medula óssea e práticas coletivas de exercício ao ar livre.
+   São algumas das possibilidades a serem exploradas dentro do ODS 3.
+</p>
+
+<!--Finalizando esta parte que foi estilizada pelo outros.css-->
+
+<!--Footer -> Rodapé -> Colocamos (a logo nossa imagem),
+(textos todos os direitos reservados), (por quem foi desenvolvidos essa página)
+(vamos ter uma navegação quando usar celular)-->
+
+
+<footer>
+  <!--Seja redimensionada para caber completamnete dentro contêiner,mantendo sua proporção original.
+  style="object-fit: contain:"-->
+<img id="logorodape" style="object-fit: contain;" src="./img/logorodape.jpg" alt="Logo">
+<span class="footer-texto">Todos os direitos reservados © 2024</span>
+<span class="footer-texto">Desenvolvido por: Lilia Ribeiro e Giovanna Gabriely</span>
+</footer>
+
+
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+</body>
+</html>

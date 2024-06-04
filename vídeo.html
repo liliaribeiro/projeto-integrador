@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./outros.css">
+    <title>Projeto ODS - Video</title>
+  </head>
+  <body>
+    <!--1° Cabeçalho------------------>
+    <header>
+      <!--adicionando uma imagem-->
+      <!--nome da tag img é id="logo"-->
+      <img id="logo" src="./img/od3.jpg" alt="Logo" />
+      <!--Criando nossa barra de navegação com as tags nav e lista com ule li-->
+      <nav>
+        <!--Criando nossa lista com os links das páginas-->
+        <ul>
+          <!--Link 1-->
+          <a href="./index.html">
+            <li>Início</li>
+          </a>
+          <!--Link 2-->
+          <a href="./od3.html">
+            <li>Ods 3</li>
+          </a>
+          <!--Link 3-->
+          <a href="./sobreods.html">
+            <li>Sobre ODS</li>
+          </a>
+          <!--Link 4-->
+          <a href="./fotos.html">
+            <li>Fotos</li>
+          </a>
+         <!--Link 5-->
+         <a href="./vídeo.html">
+          <li>Vídeo</li>
+        </a>
+        </ul>
+
+      </nav>
+
+    </header>
+    <!--Cabeçalho Finalizado-->
+
+    <!--Iniciando Banner-->
+<div id="banner"></div>
+
+<!--Esta Parte esta estilizada pelo outros.css-->
+<div class="video">
+  <h1>Vídeo</h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/gYx1fCOUpAw?si=YakfDPH2eFTwyz5N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
+<footer>
+  <!--Seja redimensionada para caber completamnete dentro contêiner,mantendo sua proporção original.
+  style="object-fit: contain:"-->
+<img id="logorodape" style="object-fit: contain;" src="./img/logorodape.jpg" alt="Logo">
+<span class="footer-texto">Todos os direitos reservados © 2024</span>
+<span class="footer-texto">Desenvolvido por: Lilia Ribeiro e Giovanna Gabriely</span>
+</footer>
+
+
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+</body>
+</html>

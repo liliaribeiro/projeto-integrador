@@ -1,0 +1,217 @@
+
+* {
+  margin: 0; /*Espaçamento externo*/
+  padding: 0; /*Espaçamento interno*/
+  list-style: none; /*Tira o estilo da lista por padrão (as bolinhas)*/
+  text-decoration: none; /*Remove qualquer decoração do texto (link)
+    remove uma linha embaixo do texto */
+  font-family: "Kdam Thmor Pro", sans-serif; /*Fonte dos textos da página (@import)*/
+}
+
+h1 {
+  text-align: center;/*Alinha o texto no centro*/
+  font-size: 70px;/*Tamanho da fonte do texto*/
+  margin-top: 30px;/*Espaçamento externo*/
+  color:rgb(18, 27, 20);
+  text-shadow: 2px 2px 2px #751919;
+}
+
+
+
+body {
+  background-color:white; /*Cor de fundo da página*/
+    background-image: url(https://thumbs.dreamstime.com/b/parede-concreta-do-cubo-d-como-o-fundo-ou-o-papel-de-parede-71926799.jpg);
+    background-size: cover;
+}
+
+/*1°Estilizando o cabeçalho header*/
+/*Pegando id do logo do batman*/
+#logo {
+  width: 80px;
+  height: auto;
+  border-radius: 20%;
+}
+
+#logorodape {
+  width: 250px;
+}
+
+header {
+  height: 100px;
+  display: flex; /*Coloca a imagem e os elementos filho lado a lado, ou seja, 
+    serão organizados em linha horizontal*/
+  justify-content: space-around; /*Distribui os itens em espaço igual entre eles e 
+    ao redor de cada item*/
+  align-items: center; /*Alinha os itens verticalmente ao centro do container*/
+  text-shadow: 2px 2px 2px #4d4646;
+}
+
+
+nav {
+  width: 60%; /*Tamanho da área de navegação*/
+}
+
+ul {
+  display: flex;
+  width: 100%; /*Ocupa todo o espaço disponivel na área de navegação*/
+  justify-content: space-around; /*Espaçamento entre os itens*/
+}
+
+li {
+  color:black; /*Cor do texto dos itens da lista*/
+  font-size: 25px; /*Tamanho do texto dos itens*/
+  cursor: pointer; /*Cria um cursor ao passar mouse*/
+  transition: 0.5s; /*Transição de cor*/
+  font-weight: bold;
+}
+
+li:hover {
+  color:rgb(52, 206, 121); /*Muda a cor do texto passando com o mouse*/
+}
+
+/*Header Finalizado*/
+/*Iniciando Banner*/
+#banner {
+  width: 100%;
+  height: 700px;
+  /*Adiciona uma imagem interna ou externa*/
+  background-image: url("https://i0.wp.com/blog.brightcities.city/wp-content/uploads/2020/02/ODS3_pt.jpg?resize=900%2C442&ssl=1");
+  background-size: cover; /*Deixa a imagem preencher todo o container sem cortá-la*/
+  background-position: 50% 60%;
+}
+
+.content {
+  width: 60%; /*Deixando o nosso container com total de 60%*/
+  display:flex; /*Colocando os elementos lado a lado*/
+  align-items: center; /*Ajusta verticalmente*/
+  justify-content: space-between; /*Espaçamento entre os elementos*/
+}
+
+#sinopse {
+  width: 50%;
+  display: flex; /*Nesse caso estamos utilizando para adicionar o flex-direction*/
+  flex-direction: column; /*Colocando os elementos com a coluna um embaixo do outro*/
+  justify-content: space-between; /*Espaçamento entre os elementos*/
+  margin-left: 30px; /*Colocando um espaçamento da esquerda*/
+}
+
+.description {
+  color: #ffffff; /*Cor do Font (texto)*/
+  font-size: 18px; /*Cor do Font (texto)*/
+  width: 70%; /*Largura*/
+}
+
+.button {
+  width: 200px; /*Largura do Botão*/
+  height: 60px; /*Altura do Botão*/
+  background-color: #d21617; /*Cor do Fundo*/
+  color: #ffffff; /*Cor do Texto*/
+  font-size: 18px;/*Tamanho do Texto*/
+  font-weight: bold;/*Fazendo com que o texto dentro desses elementos seja exibido em negrito*/
+  padding: 8px 10px;/*Espaçamento interno cima e baixo direirta e esquerda*/
+  border: none;/*Tirando as Bordas*/
+  border-radius: 7px;/*Aredondando as Bordas*/
+  cursor: pointer;/*Mudando o ponteiro do mause quando passa por cima*/
+  display: flex;
+  justify-content: center;/*Alinhando o texto ao centro na horizontal*/
+  align-items: center;/*Alinhando o texto ao centro na vertical*/
+  margin-top: 25px;/*Espaçamento superior entre o texto e o botão*/
+  outline: none;/*Tirando uma linha de contorno do botão*/
+  transition: .8s;/*Efeito de Mudança*/
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.card {
+  width: 100%;
+  height: 600px;
+}
+
+.cards-content {
+  width: 90%;/*Largura*/
+  display: grid;/*Utilizado para criar a coluna*/
+  grid-template-columns: repeat(3, 1fr);/*Cria 3 colunas com mesmo espaçamento*/
+ grid-gap: 40px;/*Espaçamento entre as colunas*/
+}
+
+.card {
+  background-size: cover;/*Imagem de Fundo da div seja dimensionada para cobrir toda a área 
+  da div, independente das dimensões da imagem original.*/
+  background-position: 50% 10%;/*1° Valor Significa que elemento terá sua posição de fundo defenida horizontalmente
+  no centro e o 2° Valor verticalmente altura do container.*/
+  border-radius: 7px;/*Arredondar os cantos dos cards*/
+  cursor: pointer;/*Colocar mouse em cima da imagem cursor muda*/
+  display: flex;/*Utilizando flex para poder utilizar flex-direction e justify-content*/
+  flex-direction: column;/*Deixando em coluna*/
+  justify-content: flex-end;/*O texto vai estar no final da coluna*/
+  color: #ffffff;/*Cor do Texto*/
+  font-weight: bold;/*Deixando o texto em negrito*/
+  font-size: 17px;/*Tamanho da fonte do texto*/
+  /*Sentido Horário*/
+  /*Cima - Direita - Baixo - Esquerdo*/
+  padding: 0 0 20px 10px;
+  transition: 1s;/*Utilizando a transição para mudar tamanho da imagem no seletor .card:houver*/
+}
+
+.texto {
+  position: absolute;/*Tirando do mesmo fluxo e o texto fica na camada acima*/
+  margin-bottom: 20px;/*Coloca espaçamento em embaixo (externo)*/
+  background-color: rgba(0, 0, 0, 0.6);/*Cor de fundo com opacidade 1° valor red 2°green 3°blue
+  4°alpha que faz o elemento ficar com opacidade*/
+  padding: 20px;/*Aumenta o fundo em todos os lados (interno)*/
+  border-radius: 8px;/*Arredonda as bordas*/
+}
+
+.actor-cards-container {
+  width: 100%;
+  display: flex;/*Utilizando flexbox para organizar os elementos para poder utlizar justify-content :center*/
+  justify-content: center;/*Deixando os elementos filhos centralizados*/
+  margin-top: 50px;/*Espaçamento superior (externo)*/
+  margin-bottom: 30px;/*Espaçamento inferior (externo)*/
+  }
+
+  /*Aumentando as imagens do cards quando passar por cima*/
+  .card:hover {
+    transform: scale(1.03);
+  }
+
+  /*Inicia rodapé (Footer)*/
+  footer {
+    height: 300px;/*Altura*/
+    margin-top: 30px;/*Espaçamento externo superior*/
+    display: flex;/*Utilizando flex para poder alinhar os elementos*/
+    flex-direction: column;/*Colocando os elementos em coluna*/
+    align-items: center;/*Alinhando os elementos no centro verticalmente*/
+    justify-content: center;/*Alinhando os elementos no centro horizontalmente*/
+    font-size: 25px;
+  }
+
+  .footer-texto {
+    color:black;/*Cor do texto Hexadecimal*/
+  }
+
+  /*display nome para desaparecer a navegação e aparecer apenas em dispositivo móveis*/
+  .footer-navigation {
+    display: none;/*Para não aparecer na página normal*/
+  }
+  
+  .footer-list {
+    display: flex;/*Utilizando flex para poder alinhar os elementos*/
+    flex-direction: column;/*Colocando os elementos em coluna*/
+    align-items: center;/*Alinhando os elementos no centro verticalmente*/
+  }
+  
+  p {
+    text-align: justify;
+    margin-top: 30px;
+    margin-right: 100px;
+    margin-left: 100px;
+    color:rgb(88, 85, 85) ;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 2px 1px 5px;
+    font-size: 2.5rem;
+  }
